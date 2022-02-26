@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="#212e42"
+        app:tabTextColor="#212e42"
+        app:tabBackground="@drawable/tabs_selector">
+
+    </com.google.android.material.tabs.TabLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginBottom="30dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Welcome Home &#128522;"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:textSize="25sp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:textColor="#212e42"-->
+<!--                android:textStyle="bold"-->
+<!--                android:fontFamily="sans-serif-medium"/>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/img1"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="250dp"-->
+<!--                android:layout_below="@+id/txt"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:src="@drawable/home" />-->
+<!--            <ImageView-->
+<!--                android:id="@+id/img2"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="250dp"-->
+<!--                android:layout_below="@id/img1"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:src="@drawable/pain"-->
+<!--                android:layout_centerHorizontal="true"/>-->
+
+<!--        </RelativeLayout>-->
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabLayout"
+        android:layout_centerHorizontal="true">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+</RelativeLayout>
